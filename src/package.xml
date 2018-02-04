@@ -78,14 +78,6 @@
     </types>
     <types>
         <members>*</members>
-        <name>CommunityTemplateDefinition</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>CommunityThemeDefinition</name>
-    </types>
-    <types>
-        <members>*</members>
         <name>ConnectedApp</name>
     </types>
     <types>
@@ -238,10 +230,6 @@
     </types>
     <types>
         <members>*</members>
-        <name>KeywordList</name>
-    </types>
-    <types>
-        <members>*</members>
         <name>Layout</name>
     </types>
     <types>
@@ -254,23 +242,11 @@
     </types>
     <types>
         <members>*</members>
-        <name>ManagedTopics</name>
-    </types>
-    <types>
-        <members>*</members>
         <name>MatchingRules</name>
     </types>
     <types>
         <members>*</members>
-        <name>ModerationRule</name>
-    </types>
-    <types>
-        <members>*</members>
         <name>NamedCredential</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>Network</name>
     </types>
     <types>
         <members>*</members>
@@ -347,10 +323,6 @@
     <types>
         <members>*</members>
         <name>SynonymDictionary</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>UserCriteria</name>
     </types>
     <types>
         <members>*</members>

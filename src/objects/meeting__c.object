@@ -48,8 +48,8 @@
     <compactLayoutAssignment>Compact_Layout</compactLayoutAssignment>
     <compactLayouts>
         <fullName>Compact_Layout</fullName>
-        <fields>StartZeit__c</fields>
         <fields>Name</fields>
+        <fields>StartZeit__c</fields>
         <fields>Ende__c</fields>
         <label>Compact Layout</label>
     </compactLayouts>
@@ -69,7 +69,7 @@
         <label>Anmerkung</label>
         <length>32768</length>
         <trackFeedHistory>true</trackFeedHistory>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Html</type>
         <visibleLines>10</visibleLines>
@@ -110,13 +110,15 @@
         <label>StartZeit</label>
         <required>true</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>DateTime</type>
     </fields>
     <label>Vorstandssitzung</label>
     <listViews>
         <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>StartZeit__c</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>
@@ -127,11 +129,31 @@
         <type>Text</type>
     </nameField>
     <pluralLabel>Vorstandssitzung</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts>
+        <customTabListAdditionalFields>StartZeit__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>OBJECT_ID</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Anmerkung__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Anzahl_Vorstaende__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Ende__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>StartZeit__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>OBJECT_ID</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Anmerkung__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Anzahl_Vorstaende__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Ende__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>StartZeit__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>OBJECT_ID</searchFilterFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>Anzahl_Vorstaende__c</searchFilterFields>
+        <searchFilterFields>Ende__c</searchFilterFields>
+        <searchFilterFields>StartZeit__c</searchFilterFields>
+        <searchFilterFields>OWNER.FIRST_NAME</searchFilterFields>
+        <searchFilterFields>OWNER.LAST_NAME</searchFilterFields>
+        <searchFilterFields>CREATEDBY_USER</searchFilterFields>
+        <searchFilterFields>UPDATEDBY_USER</searchFilterFields>
+        <searchFilterFields>LAST_ACTIVITY</searchFilterFields>
+        <searchResultsAdditionalFields>StartZeit__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Anzahl_Vorstaende__c</searchResultsAdditionalFields>
+    </searchLayouts>
     <sharingModel>Private</sharingModel>
-    <sharingReasons>
-        <fullName>SampleSharingReason__c</fullName>
-        <label>SampleSharingReason</label>
-    </sharingReasons>
     <visibility>Public</visibility>
 </CustomObject>

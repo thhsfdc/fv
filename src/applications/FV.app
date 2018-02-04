@@ -36,6 +36,15 @@
         <type>Flexipage</type>
         <pageOrSobjectType>Contact</pageOrSobjectType>
     </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>F_rderantrag_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Foerderantrag__c</pageOrSobjectType>
+    </actionOverrides>
     <brand>
         <headerColor>#0070D2</headerColor>
         <logoVersion>1</logoVersion>
@@ -45,13 +54,16 @@
     <label>Förderverein</label>
     <navType>Standard</navType>
     <tab>standard-Feed</tab>
+    <tab>standard-Event</tab>
+    <tab>meeting__c</tab>
+    <tab>Foerderantrag__c</tab>
     <tab>standard-File</tab>
     <tab>standard-CollaborationGroup</tab>
     <tab>standard-home</tab>
     <tab>standard-Task</tab>
-    <tab>meeting__c</tab>
     <tab>standard-Account</tab>
     <tab>standard-Contact</tab>
+    <tab>standard-report</tab>
     <uiType>Lightning</uiType>
     <utilityBar>F_rderverein_UtilityBar</utilityBar>
 </CustomApplication>

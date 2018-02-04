@@ -39,9 +39,9 @@
             <section>Information</section>
         </sections>
     </layouts>
-    <sharingReasons>
-        <label><!-- SampleSharingReason --></label>
-        <name>SampleSharingReason</name>
-    </sharingReasons>
+    <quickActions>
+        <label><!-- Email --></label>
+        <name>Email</name>
+    </quickActions>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>

@@ -26,7 +26,7 @@
     </preferences>
     <preferences>
         <settingName>XssProtection</settingName>
-        <settingValue>false</settingValue>
+        <settingValue>true</settingValue>
     </preferences>
     <preferences>
         <settingName>ContentSniffingProtection</settingName>
@@ -46,7 +46,7 @@
     </preferences>
     <preferences>
         <settingName>PathAssistantsEnabled</settingName>
-        <settingValue>false</settingValue>
+        <settingValue>true</settingValue>
     </preferences>
     <preferences>
         <settingName>UsePathCollapsedUserPref</settingName>
@@ -78,7 +78,7 @@
     </preferences>
     <preferences>
         <settingName>NetworksEnabled</settingName>
-        <settingValue>true</settingValue>
+        <settingValue>false</settingValue>
     </preferences>
     <preferences>
         <settingName>AnalyticsSharingEnable</settingName>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Foerderantrag__c</entityName>
+    <fieldName>Status__c</fieldName>
+    <masterLabel>Förderantrag</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Status__c</fieldNames>
+        <fieldNames>Ablehnungsgrund__c</fieldNames>
+        <picklistValueName>Abgelehnt</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Status__c</fieldNames>
+        <picklistValueName>Genehmigt</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Kommentare__c</fieldNames>
+        <fieldNames>Status__c</fieldNames>
+        <picklistValueName>In Bearbeitung</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Anfragende_Person__c</fieldNames>
+        <fieldNames>Betrag_angefragt__c</fieldNames>
+        <fieldNames>Beschreibung__c</fieldNames>
+        <picklistValueName>Neu</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Standard</recordTypeName>
+</PathAssistant>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Familie</fullName>
+        <default>false</default>
+        <label>Familie</label>
+    </customValue>
+    <customValue>
+        <fullName>Frau</fullName>
+        <default>false</default>
+        <label>Frau</label>
+    </customValue>
+    <customValue>
+        <fullName>Frau Dr.</fullName>
+        <default>false</default>
+        <label>Frau Dr.</label>
+    </customValue>
+    <customValue>
+        <fullName>Herr</fullName>
+        <default>false</default>
+        <label>Herr</label>
+    </customValue>
+    <customValue>
+        <fullName>Herr &amp; Frau</fullName>
+        <default>false</default>
+        <label>Herr &amp; Frau</label>
+    </customValue>
+    <customValue>
+        <fullName>Herr Dr.</fullName>
+        <default>false</default>
+        <label>Herr Dr.</label>
+    </customValue>
+    <customValue>
+        <fullName>Herrn</fullName>
+        <default>false</default>
+        <label>Herrn</label>
+    </customValue>
+    <customValue>
+        <fullName>Hr. Prof. Dr.</fullName>
+        <default>false</default>
+        <label>Hr. Prof. Dr.</label>
+    </customValue>
+    <masterLabel>Anrede</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

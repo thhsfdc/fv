@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Förderantrag</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Förderanträge</value>
+    </caseValues>
+    <fields>
+        <label><!-- Ablehnungsgrund --></label>
+        <name>Ablehnungsgrund__c</name>
+    </fields>
+    <fields>
+        <label><!-- Anfragende Person --></label>
+        <name>Anfragende_Person__c</name>
+        <relationshipLabel><!-- Förderanträge --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Beschreibung --></label>
+        <name>Beschreibung__c</name>
+    </fields>
+    <fields>
+        <label><!-- Betrag angefragt --></label>
+        <name>Betrag_angefragt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Betrag genehmigt --></label>
+        <name>Betrag_genehmigt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Betreff --></label>
+        <name>Betreff__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eingangsdatum --></label>
+        <name>Eingangsdatum__c</name>
+    </fields>
+    <fields>
+        <label><!-- Entscheidungsdatum --></label>
+        <name>Entscheidungsdatum__c</name>
+    </fields>
+    <fields>
+        <label><!-- Geld überwiesen am --></label>
+        <name>Geld_berwiesen_am__c</name>
+    </fields>
+    <fields>
+        <label><!-- Geld überwiesen von --></label>
+        <name>Geld_berwiesen_von__c</name>
+        <relationshipLabel><!-- Förderanträge (Geld überwiesen von) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Kommentare --></label>
+        <name>Kommentare__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Abgelehnt</masterLabel>
+            <translation><!-- Abgelehnt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Genehmigt</masterLabel>
+            <translation><!-- Genehmigt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Bearbeitung</masterLabel>
+            <translation><!-- In Bearbeitung --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neu</masterLabel>
+            <translation><!-- Neu --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Förderantrag Layout</layout>
+        <sections>
+            <label><!-- Ablehnung --></label>
+            <section>Ablehnung</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Finanzielles --></label>
+            <section>Finanzielles</section>
+        </sections>
+        <sections>
+            <label><!-- Infos --></label>
+            <section>Infos</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Standard --></label>
+        <name>Standard</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>
