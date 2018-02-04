@@ -112,6 +112,10 @@
                 <behavior>Edit</behavior>
                 <field>Telefon_migrated__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>age__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

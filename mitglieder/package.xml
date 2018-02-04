@@ -79,9 +79,6 @@
         <members>Foerderantrag__c.Standard</members>
         <name>RecordType</name>
     </types>
-    <types>
-        <members>Search</members>
-        <name>Settings</name>
-    </types>
+
     <version>41.0</version>
 </Package>
