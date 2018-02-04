@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
+        <members>migration_help</members>
+        <members>migration_help_test</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
         <members>Contact.Contact_Layout</members>
         <members>Contact.Mitglied</members>
         <members>Contact.QuickStartLayout</members>
