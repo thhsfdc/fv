@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Spende</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Spenden</value>
+    </caseValues>
+    <fields>
+        <label><!-- BIC --></label>
+        <name>BIC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Beschreibung --></label>
+        <name>Beschreibung__c</name>
+    </fields>
+    <fields>
+        <label><!-- IBAN --></label>
+        <name>IBAN__c</name>
+    </fields>
+    <fields>
+        <help><!-- wann die Info über die Spende zu uns gekommen ist --></help>
+        <label><!-- Registrierungstag --></label>
+        <name>Registrierungstag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Spendenbetrag --></label>
+        <name>Spendenbetrag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Spendentyp --></label>
+        <name>Spendentyp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Spender --></label>
+        <name>Spender__c</name>
+        <relationshipLabel><!-- Spenden --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Tag Geldeingang --></label>
+        <name>Tag_Geldeingang__c</name>
+    </fields>
+    <layouts>
+        <layout>Spende Layout</layout>
+        <sections>
+            <label><!-- Bankinfos --></label>
+            <section>Bankinfos</section>
+        </sections>
+        <sections>
+            <label><!-- Beschreibung --></label>
+            <section>Beschreibung</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

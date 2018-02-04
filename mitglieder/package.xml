@@ -17,6 +17,7 @@
     <types>
         <members>Account</members>
         <members>Contact</members>
+        <members>Spende__c</members>
         <name>CustomObject</name>
     </types>
     <types>
@@ -28,6 +29,7 @@
         <members>F_rderverein_UtilityBar</members>
         <members>Home_Page_Default</members>
         <members>Kontakt</members>
+        <members>Spende_Record_Page</members>
         <name>FlexiPage</name>
     </types>
     <types>
@@ -36,6 +38,8 @@
         <members>MitgliederRolle</members>
         <members>SchulMitarbeiter</members>
         <members>Vorstand</members>
+        <members>Spendentyp</members>
+        
         <name>GlobalValueSet</name>
     </types>
     <types>
@@ -45,6 +49,8 @@
         <members>Foerderantrag__c-Förderantrag Layout</members>
         <members>User-User Layout</members>
         <members>meeting__c-Vorstandssitzung Layout</members>
+        <members>Spende__c-Spende Layout</members>
+        
         <name>Layout</name>
     </types>
     <types>
@@ -74,6 +80,10 @@
         <members>Contact.Mitglied</members>
         <members>Foerderantrag__c.Standard</members>
         <name>RecordType</name>
+    </types>
+        <types>
+        <members>Search</members>
+        <name>Settings</name>
     </types>
     <version>41.0</version>
 </Package>

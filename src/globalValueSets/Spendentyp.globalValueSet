@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Überweisung</fullName>
+        <default>false</default>
+        <label>Überweisung</label>
+    </customValue>
+    <customValue>
+        <fullName>Lastschrift</fullName>
+        <default>false</default>
+        <label>Lastschrift</label>
+    </customValue>
+    <customValue>
+        <fullName>Bar</fullName>
+        <default>false</default>
+        <label>Bar</label>
+    </customValue>
+    <customValue>
+        <fullName>anderes</fullName>
+        <default>false</default>
+        <label>anderes</label>
+    </customValue>
+    <masterLabel>Spendentyp</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

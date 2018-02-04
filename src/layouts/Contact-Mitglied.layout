@@ -507,6 +507,10 @@
         <fields>Entscheidungsdatum__c</fields>
         <relatedList>Foerderantrag__c.Geld_berwiesen_von__c</relatedList>
     </relatedLists>
+    <relatedLists>
+        <fields>NAME</fields>
+        <relatedList>Spende__c.Spender__c</relatedList>
+    </relatedLists>
     <relatedObjects>AccountId</relatedObjects>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>
