@@ -37,9 +37,8 @@
         <members>MeetingParticipantStatsu</members>
         <members>MitgliederRolle</members>
         <members>SchulMitarbeiter</members>
-        <members>Vorstand</members>
         <members>Spendentyp</members>
-        
+        <members>Vorstand</members>
         <name>GlobalValueSet</name>
     </types>
     <types>
@@ -47,10 +46,9 @@
         <members>Contact-Contact Layout</members>
         <members>Contact-Mitglied</members>
         <members>Foerderantrag__c-Förderantrag Layout</members>
+        <members>Spende__c-Spende Layout</members>
         <members>User-User Layout</members>
         <members>meeting__c-Vorstandssitzung Layout</members>
-        <members>Spende__c-Spende Layout</members>
-        
         <name>Layout</name>
     </types>
     <types>
@@ -81,7 +79,7 @@
         <members>Foerderantrag__c.Standard</members>
         <name>RecordType</name>
     </types>
-        <types>
+    <types>
         <members>Search</members>
         <name>Settings</name>
     </types>

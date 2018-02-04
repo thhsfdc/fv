@@ -344,6 +344,31 @@
         <field>Contact.Vorstands_Rolle__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Spende__c.BIC__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Spende__c.Beschreibung__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Spende__c.IBAN__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Spende__c.Registrierungstag__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Spende__c.Tag_Geldeingang__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
     <layoutAssignments>
         <layout>Account-Account Layout</layout>
     </layoutAssignments>
@@ -376,6 +401,9 @@
     <layoutAssignments>
         <layout>Foerderantrag__c-Förderantrag Layout</layout>
         <recordType>Foerderantrag__c.Standard</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Spende__c-Spende Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>User-User Layout</layout>
