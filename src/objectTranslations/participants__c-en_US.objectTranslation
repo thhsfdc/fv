@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Teilnehmer</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Teilnehmer</value>
+    </caseValues>
+    <fields>
+        <label><!-- Kommentar --></label>
+        <name>Kommentar__c</name>
+    </fields>
+    <fields>
+        <label><!-- Kontakt --></label>
+        <name>Kontakt__c</name>
+        <relationshipLabel><!-- Teilnehmer --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Name --></label>
+        <name>Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Teilnahmestatus --></label>
+        <name>Teilnahmestatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Teilnehmer Rolle --></label>
+        <name>Teilnehmer_Rolle__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vorstandssitzung --></label>
+        <name>meeting__c</name>
+        <relationshipLabel><!-- Teilnehmer --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Teilnehmer Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Kommentar --></label>
+            <section>Kommentar</section>
+        </sections>
+        <sections>
+            <label><!-- Teilnehmer --></label>
+            <section>Teilnehmer</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

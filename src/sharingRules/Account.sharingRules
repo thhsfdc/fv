@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Vorstand_Role_sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Edit</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <label>Vorstand Role sharing</label>
+        <sharedTo>
+            <roleAndSubordinates>Vorstandsvorsitz</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <role>Vorstandsvorsitz</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

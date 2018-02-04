@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Vorstandssitzung</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Vorstandssitzung</value>
+    </caseValues>
+    <fields>
+        <label><!-- Anmerkung --></label>
+        <name>Anmerkung__c</name>
+    </fields>
+    <fields>
+        <label><!-- Anzahl Vorstände --></label>
+        <name>Anzahl_Vorstaende__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ende --></label>
+        <name>Ende__c</name>
+    </fields>
+    <fields>
+        <label><!-- StartZeit --></label>
+        <name>StartZeit__c</name>
+    </fields>
+    <layouts>
+        <layout>Vorstandssitzung Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Header --></label>
+            <section>Header</section>
+        </sections>
+        <sections>
+            <label><!-- Information --></label>
+            <section>Information</section>
+        </sections>
+    </layouts>
+    <sharingReasons>
+        <label><!-- SampleSharingReason --></label>
+        <name>SampleSharingReason</name>
+    </sharingReasons>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

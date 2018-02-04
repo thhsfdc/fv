@@ -1,0 +1,19 @@
+<aura:component controller="FV_CreateUserFromContact"
+                implements="force:lightningQuickActionWithoutHeader,force:hasRecordId">
+    <!--If you want to customise header then use 'implements ="force:lightningQuickActionWithoutHeader"' -->
+    <!-- https://webkul.com/blog/how-to-create-a-custom-button-on-record-page-in-lightning-experience/ -->
+    <!-- https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/components_using_lex_s1_config_action_recordid.htm -->
+    <!--/**
+         * Webkul Software.
+         *
+         * @category  Webkul
+         * @author    Webkul
+         * @copyright Copyright (c) 2010-2016 Webkul Software Private Limited (https://webkul.com)
+         * @license   https://store.webkul.com/license.html
+         **/-->
+    <div>
+        Hello World!
+    </div>
+    <aura:attribute name="recordId" type="Id" />
+    
+</aura:component>
