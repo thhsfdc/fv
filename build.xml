@@ -85,7 +85,7 @@
        </sf:deploy>
     </target>   
 
-   <target name="deploy_notes">
+   <target name="deploy_base">
       <sf:deploy username="${sf.username}"
        password="${sf.password}" 
        serverurl="${sf.serverurl}" 

@@ -56,6 +56,12 @@
         <name>ListView</name>
     </types>
     <types>
+        <members>Admin</members>
+        <members>Erweiterter_Vorstand</members>
+        <members>Vorstandsmitglied</members>
+        <name>Profile</name>
+    </types>
+    <types>
         <members>Account.Anderer</members>
         <members>Account.Mitglied</members>
         <members>Account.Vorstand</members>
