@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Vorsitzender</fullName>
+        <default>false</default>
+        <label>Vorsitzender</label>
+    </customValue>
+    <customValue>
+        <fullName>2. Vorsitzender</fullName>
+        <default>false</default>
+        <label>2. Vorsitzender</label>
+    </customValue>
+    <customValue>
+        <fullName>Schatzmeister</fullName>
+        <default>false</default>
+        <label>Schatzmeister</label>
+    </customValue>
+    <customValue>
+        <fullName>Schriftführer</fullName>
+        <default>false</default>
+        <label>Schriftführer</label>
+    </customValue>
+    <customValue>
+        <fullName>Beirat</fullName>
+        <default>false</default>
+        <label>Beirat</label>
+    </customValue>
+    <customValue>
+        <fullName>Kassenprüfer</fullName>
+        <default>false</default>
+        <label>Kassenprüfer</label>
+    </customValue>
+    <customValue>
+        <fullName>Ständiger Gast</fullName>
+        <default>false</default>
+        <label>Ständiger Gast</label>
+    </customValue>
+    <masterLabel>Vorstand</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

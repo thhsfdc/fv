@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Mitglied</fullName>
+        <default>true</default>
+        <label>Mitglied</label>
+    </customValue>
+    <customValue>
+        <fullName>Vorstand</fullName>
+        <default>false</default>
+        <label>Vorstand</label>
+    </customValue>
+    <customValue>
+        <fullName>erweiterter Vorstand</fullName>
+        <default>false</default>
+        <label>erweiterter Vorstand</label>
+    </customValue>
+    <customValue>
+        <fullName>Gast</fullName>
+        <default>false</default>
+        <label>Gast</label>
+    </customValue>
+    <customValue>
+        <fullName>Öffentlichkeit</fullName>
+        <default>false</default>
+        <label>Öffentlichkeit</label>
+    </customValue>
+    <customValue>
+        <fullName>Lehrer am Gymnasium</fullName>
+        <default>false</default>
+        <label>Lehrer am Gymnasium</label>
+    </customValue>
+    <customValue>
+        <fullName>Ehrenmitglied</fullName>
+        <default>false</default>
+        <label>Ehrenmitglied</label>
+    </customValue>
+    <masterLabel>MitgliederRolle</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

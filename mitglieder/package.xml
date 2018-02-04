@@ -1,35 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
-
+    <types>
+        <members>Contact.Contact_Layout</members>
+        <members>Contact.Mitglied</members>
+        <members>Contact.QuickStartLayout</members>
+        <members>Foerderantrag__c.FA</members>
+        <members>meeting__c.Compact_Layout</members>
+        <members>participants__c.Compact_Layout</members>
+        <name>CompactLayout</name>
+    </types>
     <types>
         <members>Account</members>
         <members>Contact</members>
         <name>CustomObject</name>
     </types>
-
-
-
-
     <types>
         <members>Account_Record_Page</members>
+        <members>Contact_Record_Page</members>
+        <members>Contact_Record_Page1</members>
         <members>F_rderantrag_Record_Page</members>
+        <members>F_rderantrag_Record_Page</members>
+        <members>F_rderverein_UtilityBar</members>
+        <members>Home_Page_Default</members>
         <members>Kontakt</members>
         <name>FlexiPage</name>
     </types>
-   
-
     <types>
         <members>Anrede</members>
+        <members>MeetingParticipantStatsu</members>
         <members>MitgliederRolle</members>
+        <members>SchulMitarbeiter</members>
+        <members>Vorstand</members>
         <name>GlobalValueSet</name>
-    </types> 
-
+    </types>
     <types>
         <members>Account-Account Layout</members>
+        <members>Contact-Contact Layout</members>
+        <members>Contact-Mitglied</members>
+        <members>Foerderantrag__c-Förderantrag Layout</members>
+        <members>User-User Layout</members>
+        <members>meeting__c-Vorstandssitzung Layout</members>
         <name>Layout</name>
     </types>
-
-    
-
+    <types>
+        <members>Account.AllAccounts</members>
+        <members>Account.MyAccounts</members>
+        <members>Contact.AllContacts</members>
+        <members>Contact.BirthdaysThisMonth</members>
+        <members>Contact.NewThisWeek</members>
+        <members>Contact.Nur_Mitglieder</members>
+        <members>Contact.Vorstands</members>
+        <members>Foerderantrag__c.All</members>
+        <members>Foerderantrag__c.FoerderantragsQ_Foerderantrag</members>
+        <members>meeting__c.All</members>
+        <name>ListView</name>
+    </types>
+    <types>
+        <members>Account.Anderer</members>
+        <members>Account.Mitglied</members>
+        <members>Account.Vorstand</members>
+        <members>Contact.Andere</members>
+        <members>Contact.Mitglied</members>
+        <members>Foerderantrag__c.Standard</members>
+        <name>RecordType</name>
+    </types>
     <version>41.0</version>
 </Package>
