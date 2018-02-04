@@ -1,0 +1,182 @@
+<project name="wacker" 
+  default="." 
+  basedir="." 
+  xmlns:sf="antlib:com.salesforce">
+    <property file="build.properties.${env}"/>
+    <property name="prop-file"  value="build.properties.${env}"/>
+    
+    <property name="environment" value="${env}"/>
+    <property name="src.dir" value="${src}"/>
+    <property name="recentV" value="${recentV}"/>
+    <property name="targetdir" value="${targetdir}"/>
+    <property name="metadataType" value="${metadataType}"/>
+
+  <property name="destructive.dir" value="../destructiveChange"/>
+  <tstamp>
+        <format property="current.time"
+             pattern="yyyyMMdd_HHmmss"/>
+        <format property="dir.name" 
+              pattern="yyyyMMdd_HHmmss" />
+    </tstamp>
+      <property name="targetdir.name" 
+              value="${env}.${src}.${dir.name}" />
+
+<echo message="prop-file is ${prop-file}" />
+<echo message="scr.dir is ${src.dir}" />
+<echo message="environment is ${env}" />
+<echo message="recentValidationId is ${recentV}" />
+<echo message="dir.name is ${dir.name}" />
+<echo message="targetdir.name is ${targetdir.name}" />
+<echo message="metadataType is ${metadataType}" />
+<echo message="sf.username is ${sf.username}" />
+
+<!--input
+    message="Please enter username for ${sf.username}"
+    addproperty="sf.password"
+    defaultvalue="Scott-Tiger"
+/-->
+
+
+<target name="validateOnly">
+      <sf:deploy username="${sf.username}"
+       password="${sf.password}"
+       serverurl="${sf.serverurl}"
+       maxPoll="${sf.maxPoll}"
+       allowMissingFiles="true"
+       trace="false"
+       checkOnly="true"
+       testLevel="RunLocalTests"
+       deployRoot="${src}/">
+       </sf:deploy>
+    </target>
+
+<target name="quickDeploy">
+  <sf:deployRecentValidation
+   username="${sf.username}"
+    password="${sf.password}"
+    serverurl="${sf.serverurl}"
+    maxPoll="${sf.maxPoll}"
+    recentValidationId="${recentV}"/>
+</target>
+
+
+<target name="deploy_test">
+      <sf:deploy username="${sf.username}"
+       password="${sf.password}" 
+       serverurl="${sf.serverurl}" 
+       maxPoll="${sf.maxPoll}" 
+       allowMissingFiles="true"
+       trace="false"
+       deployRoot="${src}/"
+       testLevel="RunLocalTests">
+       </sf:deploy>
+    </target>
+
+ <target name="deploy">
+      <sf:deploy username="${sf.username}"
+       password="${sf.password}" 
+       serverurl="${sf.serverurl}" 
+       maxPoll="${sf.maxPoll}" 
+       allowMissingFiles="true"
+       trace="false"
+       deployRoot="${src}/"
+       testLevel="RunSpecifiedTests">
+        <runTest>SaaSCreateSessionCtrlTest</runTest>
+       </sf:deploy>
+    </target>   
+
+   <target name="deploy_notes">
+      <sf:deploy username="${sf.username}"
+       password="${sf.password}" 
+       serverurl="${sf.serverurl}" 
+       maxPoll="${sf.maxPoll}" 
+       allowMissingFiles="true"
+       trace="false"
+       deployRoot="${src}/">
+       </sf:deploy>
+    </target> 
+
+
+ <target name="listMetadata">
+   <mkdir dir="${targetdir.name}"/>
+      <sf:listMetadata 
+        username="${sf.username}" 
+        password="${sf.password}" 
+        serverurl="${sf.serverurl}" 
+        metadataType="${metadataType}"
+        folder="Emailtemplates"
+    resultFilePath="listMetadatalist.log"
+        
+        />
+    </target>
+
+
+<target name="retrieve1">
+      <mkdir dir="${env}.retrieve1.${current.time}"/>
+      <sf:retrieve username="${sf.username}" 
+        password="${sf.password}"
+        serverurl="${sf.serverurl}"
+         maxPoll="${sf.maxPoll}"
+        retrieveTarget="${env}.retrieve1.${current.time}/"
+        unpackaged="/package.xml"/>
+    </target>   
+
+<target name="retrieve2">
+      <mkdir dir="${targetdir.name}"/>
+      <sf:retrieve username="${sf.username}" 
+        password="${sf.password}"
+        serverurl="${sf.serverurl}"
+         maxPoll="${sf.maxPoll}"
+        retrieveTarget="${targetdir.name}/"
+        unpackaged="${src}/package.xml"
+        unzip="true"
+        />
+    </target>
+
+<target name="mitglieder">
+      <sf:retrieve username="${sf.username}" 
+        password="${sf.password}"
+        serverurl="${sf.serverurl}"
+         maxPoll="${sf.maxPoll}"
+        retrieveTarget="${src}/"
+        unpackaged="${src}/package.xml"
+        unzip="true"
+        />
+    </target>        
+
+<target name="retrieve_base">
+      <mkdir dir="${targetdir}"/>
+      <sf:retrieve username="${sf.username}" 
+        password="${sf.password}"
+        serverurl="${sf.serverurl}"
+         maxPoll="${sf.maxPoll}"
+        retrieveTarget="${targetdir}/"
+        unpackaged="package.xml"
+        unzip="true"
+        />
+    </target>      
+
+<target name="retrievezip">
+      <mkdir dir="${targetdir.name}"/>
+      <sf:retrieve username="${sf.username}" 
+        password="${sf.password}"
+        serverurl="${sf.serverurl}"
+         maxPoll="${sf.maxPoll}"
+        retrieveTarget="${targetdir.name}/"
+        unpackaged="/package.xml"
+        unzip="false"
+        />
+    </target>   
+
+<target name="describeMetadata">
+   <mkdir dir="${env}.describeMetadata"/>
+      <sf:describeMetadata 
+        username="${sf.username}"
+       password="${sf.password}" 
+       serverurl="${sf.serverurl}"
+        resultFilePath="${env}.describeMetadata/list.txt"
+        />
+    </target>
+    
+
+</project>
