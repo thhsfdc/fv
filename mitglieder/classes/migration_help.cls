@@ -1,6 +1,6 @@
 public class migration_help {
     
-    public static void mighelp(ID ContactID)
+    public static void mighelp()
     {
         system.debug('i am here - mighelp');
     }
