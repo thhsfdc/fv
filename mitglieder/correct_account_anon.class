@@ -1,0 +1,10 @@
+LIST<contact> acclst=[Select Id, AccountId, account.name, Name, RecordTypeId, RecordType.developername 
+FROM Contact 
+where RecordTypeId='01258000000h44LAAQ'
+and AccountId=''];
+system.debug('lst:'+acclst.size());
+for (contact c: acclst)
+{
+    c.AccountId = '00158000019HVyvAAG';
+}
+update acclst;
